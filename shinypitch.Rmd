@@ -1,0 +1,37 @@
+---
+title: "Let's Make a Pitch"
+date: "6/1/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Why pitch?
+
+- We pitch because the business world requires we do so
+- In this case, the pitch will be 5 slides to keep it pithy
+- People have short attention spans
+
+## Why this app
+
+- I live in California, a large state with a diverse population
+- There's lots of crime in parts, and I want to understand where we fit within the nation
+
+## My state
+-Here are some of California's stats on rape, murder, and assault:
+
+```{r}
+data(USArrests)
+USArrests["California",]
+```
+California has 9 murders, 276 assaults, and 40.6 rapes per 100,000 people. There are 39.5 million people living in California. Let's calculate the number of each crime per year:
+
+```{r}
+39.5*10^6/10^6*USArrests["California",]
+```
+That's 355 murders, almost 11,000 assaults, and 1604 rapes per year! That's unfortunate. Fun fact, California is also the most urban state, with 91% of the population living in cities. Hmm...
+
+## What the app does
+This app allows you to track the crime statistics by state, filtering by urban population. The app will also fit a regression line to your plot, so you can select only the most urban states and fit a line. So cool! Please fund me now!!!

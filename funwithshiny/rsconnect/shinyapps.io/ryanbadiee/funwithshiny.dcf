@@ -1,0 +1,12 @@
+name: funwithshiny
+title: funwithshiny
+username:
+account: ryanbadiee
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2387990
+bundleId: 3212995
+url: https://ryanbadiee.shinyapps.io/funwithshiny/
+when: 1590995217.02221
+asMultiple: FALSE
+asStatic: FALSE
